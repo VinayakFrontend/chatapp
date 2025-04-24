@@ -46,7 +46,7 @@ io.on('connection', (socket) => {
     console.log(`${userName} left the chat`);
   });
 });
+const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-server.listen(3001, '192.168.0.104', () => {
-  console.log('Server is running on http://localhost:3001');
 });
